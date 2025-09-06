@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "MITRE ATT&CK Groups Lookup",
+  "version": "1.0",
+  "description": "Look up MITRE ATT&CK groups and their descriptions",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://attack.mitre.org/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "MITRE ATT&CK Groups Lookup"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

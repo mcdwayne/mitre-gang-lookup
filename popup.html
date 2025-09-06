@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITRE ATT&CK Groups Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MITRE ATT&CK Groups Lookup</h1>
+            <p>Search for threat groups and their descriptions</p>
+        </header>
+        
+        <div class="search-section">
+            <div class="input-group">
+                <input type="text" id="searchInput" placeholder="Enter group name or alias..." />
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <span>Searching...</span>
+            </div>
+        </div>
+        
+        <div class="results-section" id="resultsSection" style="display: none;">
+            <h2>Search Results</h2>
+            <div id="results"></div>
+        </div>
+        
+        <div class="error-section" id="errorSection" style="display: none;">
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+        
+        <div class="info-section">
+            <p class="info-text">
+                <strong>How to use:</strong> Enter a group name, alias, or partial name to search through MITRE ATT&CK groups. 
+                The extension will return matching groups with their descriptions and associated techniques.
+            </p>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

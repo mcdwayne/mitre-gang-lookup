@@ -41,6 +41,12 @@ A Chrome browser extension that allows you to search for MITRE ATT&CK threat gro
    - Click "View on MITRE ATT&CK" to open the full group page
    - Each result shows the group name, ID, description, and aliases
 
+## Example Usage
+
+![Example Use](example-use.png)
+
+*Screenshot showing the extension in action with search results for threat groups*
+
 ## How It Works
 
 The extension fetches data from MITRE ATT&CK's official STIX (Structured Threat Information eXpression) data source. It:
